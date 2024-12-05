@@ -108,7 +108,7 @@ sudo systemctl start ssh
 
 -4. Redémarrer votre ordinateur : Redémarrez pour que les modifications prennent effet
 
--5. Connexion via PowerShell :Lancez PowerShell avec les privilèges administratifs (clic droit sur l'icône PowerShell, puis "Exécuter en tant qu'administrateur").
+-5. Connexion via PowerShell : Lancez PowerShell avec les privilèges administratifs (clic droit sur l'icône PowerShell, puis "Exécuter en tant qu'administrateur").
     pui Utilisez la commande suivante pour vous connecter à votre serveur Debian 
 
 
