@@ -31,7 +31,7 @@
 
 Voici le schéma des Unités Organisationnelles et des groupes. Les groupes ont été définis en fonction des différents droits d'accès.
 
-<P ALIGN="center"><IMG src="..\Ressources\Annexes S03\Schema_UO_Gpes.png" width=500></P>
+<P ALIGN="center"><IMG src="..\Ressources\Annexes S03\Schema_UO_Gpes.png" width=1000></P>
 
 **Unités Organisationnelles**
 
