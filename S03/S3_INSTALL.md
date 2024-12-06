@@ -12,7 +12,10 @@
 | **Login**    | Administrator                   | Administrator                | Administrator        |
 | **Password** | Azerty1\*                       | Azerty1\*                    | Azerty1\*            |
 
-## Installation de l'ADDS, DHCP et DNS sur Windows Server Graphic
+<details>
+<summary><h2>Windows Server Graphic</h2></summary>
+
+## Installation de l'ADDS, DHCP et DNS
 
 1. Cliquer sur _Manage_ puis _Add Roles and Features_.
 <P ALIGN="center"><IMG src="..\Ressources\Annexes S02\Capture d'écran 2024-11-28 140642.png" width=500></P>
@@ -44,10 +47,86 @@ Voici le schéma des Unités Organisationnelles et des groupes. Les groupes ont 
 
 1. Dans une UO "Groupes", clic-droit sur cette UO ---> New ---> Group ---> Entrer le nom "Admin_Sys"
 2. Répéter ces actions en respectant la structure prévue par le schéma.
+</details>
 
-## Installation Serveur Debian12
+<HR>
 
 <details>
+<summary><h2>Serveur Windows Core</h2></summary>
+
+### 1 - Installation
+
+#### Étape 1 : Choix de la langue  
+
+Choisir de la langue pour l'installation, format de l'heure et clavier ou méthode de saisie.  
+<P ALIGN="center"><IMG src="..\Ressources/Annexes S03/ScreenShot Windows Core/Install_Step_01.png" width=500></P>
+
+#### Étape 2 : Choix système  
+
+Choisir le système **Windows Server 2022 Standard Evaluation** et cliquez sur **Next**.  
+<P ALIGN="center"><IMG src="..\Ressources/Annexes S03/ScreenShot Windows Core/Install_Step_02.png" width=500></P>
+
+#### Étape 3 : Type d'installation  
+
+Choisir le type d'installation en **Custom**.  
+<P ALIGN="center"><IMG src="..\Ressources/Annexes S03/ScreenShot Windows Core/Install_Step_03.png" width=500></P>
+
+Sélectionner le disque principal et cliquez sur **Next**.  
+<P ALIGN="center"><IMG src="..\Ressources/Annexes S03/ScreenShot Windows Core/Install_Step_03-1.png" width=500></P>
+
+#### Étape 4 : Installation  
+
+Une fois l'étape 3 finie l'installation se lance, à la fin de celle-ci le PC redémarre.  
+<P ALIGN="center"><IMG src="..\Ressources/Annexes S03/ScreenShot Windows Core/Install_Step_04.png" width=500></P>
+
+#### Étape 5 : Mot de passe    
+
+Une fois que le PC à redémarré, on vous demande de changer le mot de passe, sélectionnez **OK** et appuyez sur la touche **Entrée**.  
+<P ALIGN="center"><IMG src="..\Ressources/Annexes S03/ScreenShot Windows Core/Install_Step_05.png" width=500></P>  
+
+Renseignez votre mot de passe et appuyez sur la touche **Entrée**. Si cela ne fonctionne pas, vérifiez que le mot de passe soit bien identique dans les deux champs **New password** et **Confirm password**  
+<P ALIGN="center"><IMG src="..\Ressources/Annexes S03/ScreenShot Windows Core/Install_Step_05-1.png" width=500></P>
+
+Une fois le mot de passe modifié, un message de confirmation s'affiche, vous pouvez appuyez sur la touche **Entrée**.  
+<P ALIGN="center"><IMG src="..\Ressources/Annexes S03/ScreenShot Windows Core/Install_Step_05-2.png" width=500></P>
+
+### 2 - Paramètres  
+
+#### Étape 1 : Configuration IP  
+
+Entrée le chiffre **8** pour modifier les paramètres réseaux.  
+<P ALIGN="center"><IMG src="..\Ressources/Annexes S03/ScreenShot Windows Core/Param_Step_01.png" width=500></P>
+
+Selectionnez l'index de la carte réseau à modifier _(ici l'index 1)_.  
+<P ALIGN="center"><IMG src="..\Ressources/Annexes S03/ScreenShot Windows Core/Param_Step_01-1.png" width=500></P>
+
+Pour modifier l'IP, choisir le chiffre **1**.  
+Pour une IP statique, choisir **S** _(il est possible de choisir par DHCP si celui est configuré sur votre réseau)_  
+Renseignez votre IP (dans cet exemple **172.18.1.2**), puis le masque de réseau **255.255.0.0** (/16).  
+Enfin l'adresse IP de votre passerelle par défaut, ici ce sera **172.18.0.1**.  
+Un message vous affichera si l'opération à réussi. Vous pouvez appuyer sur **Entrée** pour revenir au menu.  
+<P ALIGN="center"><IMG src="..\Ressources/Annexes S03/ScreenShot Windows Core/Param_Step_01-2.png" width=500></P>
+
+#### Étape 2 : Ajout au domaine  
+
+Pour ajouter votre PC à un domaine existant, choisissez l'option **1**  
+<P ALIGN="center"><IMG src="..\Ressources/Annexes S03/ScreenShot Windows Core/Param_Step_02.png" width=500></P>
+
+Selectionner **D** pour le domaine et renseignez le nom du domaine à joindre, ici **billu.com**  
+Spécifiez un utilisateur autorisé sur ce domaine, ici **BILLU\Administrator** et renseignez le mot de passe.  
+Un message vous informera si l'opération a réussi.  
+<P ALIGN="center"><IMG src="..\Ressources/Annexes S03/ScreenShot Windows Core/Param_Step_02-1.png" width=500></P>
+
+Vous devriez maintenant voir votre nom de domaine en face de l'option **1**.  
+<P ALIGN="center"><IMG src="..\Ressources/Annexes S03/ScreenShot Windows Core/Param_Step_02-2.png" width=500></P>
+
+</details>
+<HR>
+
+<details>
+<summary><h2>Serveur Debian12</h2></summary>
+
+## Installation
 
 ### les différentes VM seront installées sur ProxMox
 
@@ -92,12 +171,8 @@ Voici le schéma des Unités Organisationnelles et des groupes. Les groupes ont 
   -Nous continuons la validation avec l'installation du programme GRUB -![installation de grub](https://github.com/user-attachments/assets/987204ca-c70d-4332-8af4-90e4c383c036)
   -Et normalement, on a juste à attendre la fin de l'installation pour ensuite accéder à notre machine Debian. -![fin d'instalation ](https://github.com/user-attachments/assets/0deb1713-edf1-4be1-a6d2-14792086e4ed) -![a](https://github.com/user-attachments/assets/61723781-e4db-4e31-8def-8e129ca36552)
 
-</details>
-<HR>
 
-- ## Configuration SSH sur Debian
-
-<details>
+## Configuration SSH sur Debian
 
 1.  Ouvrir le terminal et tapez la commande :
 
@@ -160,4 +235,3 @@ utilisateur Debian lorsque vous y êtes invité.
 
 </details>
 
-##
