@@ -213,18 +213,18 @@ sudo systemctl start ssh
 -Et normalement vous aller avoir ce résultat -![ssh active ](https://github.com/user-attachments/assets/531dba0c-54ad-4b67-8ff0-79a455c36221)
 
 - ## Configuration SSH sur Windows server
-- Ouvrir les Paramètres :
 
--1. Cliquez sur le bouton Démarrer et sélectionnez "Paramètres" (ou appuyez sur Win + I) Dans les Paramètres, allez dans "Applications"
 
--2. Sélectionnez "Fonctionnalités facultatives" Cliquez sur "Ajouter une fonctionnalité facultative"
+- **1.** Cliquez sur le bouton Démarrer et sélectionnez "Paramètres" (ou appuyez sur Win + I) Dans les Paramètres, allez dans "Applications"
 
--3. Rechercher et installer OpenSSH Client : Cochez la case à côté de "OpenSSH Client" et cliquez sur "Installer"
+- **2.** Sélectionnez "Fonctionnalités facultatives" Cliquez sur "Ajouter une fonctionnalité facultative"
 
--4. Redémarrer votre ordinateur : Redémarrez pour que les modifications prennent effet
+- **3.** Rechercher et installer OpenSSH Client : Cochez la case à côté de "OpenSSH Client" et cliquez sur "Installer"
 
--5. Connexion via PowerShell : Lancez PowerShell avec les privilèges administratifs (clic droit sur l'icône PowerShell, puis "Exécuter en tant qu'administrateur").
-pui Utilisez la commande suivante pour vous connecter à votre serveur Debian
+- **4.** Redémarrez pour que les modifications prennent effet
+
+- **5.** Connexion via PowerShell : lancer powershell en tant qu administrateur, 
+     en suite Utilisez la commande suivante pour vous connecter à votre serveur Debian
 
 ```bash
  ssh user@server_ip
