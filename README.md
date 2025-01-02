@@ -24,6 +24,7 @@ BillU comprend actuellement 167 personnes.
 | **Semaine 3** | Anthony           | Fred             | Hamza          |
 | **Semaine 4** | Anthony           | Fred             | Hamza          |
 | **Semaine 5** | Anthony           | Fred             | Hamza          |
+| **Semaine 6** | Anthony           | Fred             | Hamza          |
 
 ## Choix techniques
 
