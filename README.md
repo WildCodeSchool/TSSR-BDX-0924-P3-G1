@@ -17,6 +17,14 @@ BillU comprend actuellement 167 personnes.
 
 ## Présentation de l'équipe, rôles par sprint
 
+| **Rôles**     | **Product Owner** | **Scrum Master** | **Technicien** |
+| ------------- | ----------------- | ---------------- | -------------- |
+| **Semaine 1** | Anthony           | Fred             | Hamza          |
+| **Semaine 2** | Anthony           | Fred             | Hamza          |
+| **Semaine 3** | Anthony           | Fred             | Hamza          |
+| **Semaine 4** | Anthony           | Fred             | Hamza          |
+| **Semaine 5** | Anthony           | Fred             | Hamza          |
+
 ## Choix techniques
 
 ### Serveurs
