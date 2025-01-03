@@ -1,6 +1,6 @@
 ==============================
 
-# Guide Aministrateur
+# P3-G1 BILLU
 
 ==============================
 
@@ -11,6 +11,23 @@
 | **HostName** | SRV-DC-01                       | SRV-DC-02                    |
 | **Login**    | Administrator                   | Administrator                |
 | **Password** | Azerty1\*                       | Azerty1\*                    |
+
+Toutes les VM sont installées sur l'hyperviseur Proxmox
+
+## Installation d'une machine virtuelle Windows Server 2022 Graphic - Thor
+
+A partir de templates mis à notre disposition, nous pouvons installer nos machines. Pour la Windows Server 2022, voici la marche à suivre.
+1. Choisir le template *1098-Template-Windows-Server-2022* puis clic-droit `Clone`
+2. Choisir le **VM ID** entre 1041 et 1059.
+3. Dans **Name**, respecter la nomenclature TSSR-P3-G1-"Nom de la machine". En l'occurence ici, TSSR-P3-G1-ServeurDC01.
+4. Dans **Ressource Pool**, choisir `TSSR-2409-BDX-P3-G1-`.
+5. Dans **Mode**, sélectionner `Full Clone`.
+6. Dans l'onglet **Hardware**, cliquer sur `Add` et ajouter un `Network Device`. Brige : vmbr1025 BillU (LAN) / Model : Intel E1000 et décocher `Firewall`.
+7. Lancer le serveur, puis configurer l'adresse IPv4 comme suit :
+
+- **Adresse IP**  : 172.168.255.1    
+- **Masque**      : 255.255.0.0       
+- **Passerelle**  : 172.168.255.254   
 
 ## Installation de l'ADDS, DHCP et DNS sur Windows Server Graphic
 
