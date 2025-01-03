@@ -2,6 +2,10 @@
 
 ## Schéma prévisionnel du réseau
 
+Voici le plan prévisionnel du réseau, ce plan peut être amené a etre modifié.  
+
+![Diagramme_reseau](/Ressources/S01_diagramme_reseau_billu.jpg)
+
 ## Plan d'adressage IP
 
 Le réseau de la société BillU est en 172.18.1.0/16
