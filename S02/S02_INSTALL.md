@@ -19,7 +19,7 @@ Toutes les VM sont installées sur l'hyperviseur Proxmox
 A partir de templates mis à notre disposition, nous pouvons installer nos machines. Pour la Windows Server 2022, voici la marche à suivre.
 1. Choisir le template *1098-Template-Windows-Server-2022* puis clic-droit `Clone`
 2. Choisir le **VM ID** entre 1041 et 1059.
-3. Dans **Name**, respecter la nomenclature TSSR-P3-G1-"Nom de la machine". En l'occurence ici, TSSR-P3-G1-ServeurDC01.
+3. Dans **Name**, respecter la nomenclature G1-"Nom de la machine". En l'occurence ici, G1-SRV-DC-01.
 4. Dans **Ressource Pool**, choisir `TSSR-2409-BDX-P3-G1-`.
 5. Dans **Mode**, sélectionner `Full Clone`.
 6. Dans l'onglet **Hardware**, cliquer sur `Add` et ajouter un `Network Device`. Brige : vmbr1025 BillU (LAN) / Model : Intel E1000 et décocher `Firewall`.
