@@ -47,4 +47,4 @@ A partir de templates mis à notre disposition, nous pouvons installer nos machi
 ## Création des Unités Organisationnelles au sein de l'AD
 Selon le schéma établit, nous pouvons créer nos **UO**. Une UO *France* est crée afin d'anticiper une éventuelle extension de l'entreprise dans un autre pays. Une UO *Paris* est crée pour anticiper un extension dans une autre ville de France et de la même manière, une UO *20-Paris* est crée pour anticiper une extension dans un autre arrondissement de Paris. Ensuite, les UO correspondent aux différents départements de BillU et des groupes sont aussi créés correspondants aux différents services dans les départements.
 
-<P ALIGN="center"><IMG src="..\Ressources\Annexes S02\Capture d'écran 2024-11-28 142055.png" width=500></P>
+<P ALIGN="center"><IMG src="..\Ressources\Annexes S02\Capture_UO_AD.png" width=500></P>
