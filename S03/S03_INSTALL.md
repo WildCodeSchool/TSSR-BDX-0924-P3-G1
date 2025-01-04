@@ -1,6 +1,6 @@
 ==============================
 
-# Guide Aministrateur
+# P3-G1 BILLU
 
 ==============================
 
@@ -12,43 +12,6 @@
 | **Login**    | Administrator                   | Administrator                | Administrator        |
 | **Password** | Azerty1\*                       | Azerty1\*                    | Azerty1\*            |
 
-<details>
-<summary><h2>Windows Server Graphic</h2></summary>
-
-## Installation de l'ADDS, DHCP et DNS
-
-1. Cliquer sur _Manage_ puis _Add Roles and Features_.
-<P ALIGN="center"><IMG src="..\Ressources\Annexes S02\Capture d'écran 2024-11-28 140642.png" width=500></P>
-
-2. Sélectionner _Role-based or feature-based installation_.
-3. Sélectionner le serveur.
-4. Sélectionner _Active Directory Domain Services_ puis cliquer sur l'option `Add features`.
-5. De la même manière, cocher sur _DHCP Server_ puis cliquer sur l'option `Add features`.
-6. Cocher ensuite sur _DNS Server_ puis cliquer sur l'option `Add features`.
-
-<P ALIGN="center"><IMG src="..\Ressources\Annexes S02\Capture d'écran 2024-11-28 142055.png" width=500></P>
-
-7. Cliquer sur `Next` jusqu'à la fin de l'assistant d'installation puis cliquer sur `Install`. S'il ne le fait pas automatiquement, redémarrer l'ordinateur afin qu'il prenne en charge ses nouveaux rôles.
-
-## Mise en place de la structure organisationnelle dans l'Active Directory sur Windows Server Graphic
-
-Voici le schéma des Unités Organisationnelles et des groupes. Les groupes ont été définis en fonction des différents droits d'accès.
-
-<P ALIGN="center"><IMG src="..\Ressources\Annexes S03\Schema_UO_Gpes.png" width=1000></P>
-
-**Unités Organisationnelles**
-
-1. Cliquer sur Tools ---> Active Directory Users ans Computers
-2. Clic droit sur billu.com ---> New ---> Organizational Unit---> Entrer le nom "Direction"
-3. Clic-droit sur cette nouvelle UO "Direction" ---> New ---> UO pour ajouter une nouvelle UO dans l'UO "Direction"---> Entrer le nom "Directeur"
-4. Répéter ces actions en respectant la structure prévue par le schéma.
-
-**Groupes**
-
-1. Dans une UO "Groupes", clic-droit sur cette UO ---> New ---> Group ---> Entrer le nom "Admin_Sys"
-2. Répéter ces actions en respectant la structure prévue par le schéma.
-</details>
-
 <HR>
 
 <details>
@@ -56,68 +19,82 @@ Voici le schéma des Unités Organisationnelles et des groupes. Les groupes ont 
 
 ### 1 - Installation
 
-#### Étape 1 : Choix de la langue  
+#### Étape 1 : Choix de la langue
 
-Choisir de la langue pour l'installation, format de l'heure et clavier ou méthode de saisie.  
+Choisir de la langue pour l'installation, format de l'heure et clavier ou méthode de saisie.
+
 <P ALIGN="center"><IMG src="..\Ressources/Annexes S03/ScreenShot Windows Core/Install_Step_01.png" width=500></P>
 
-#### Étape 2 : Choix système  
+#### Étape 2 : Choix système
 
-Choisir le système **Windows Server 2022 Standard Evaluation** et cliquez sur **Next**.  
+Choisir le système **Windows Server 2022 Standard Evaluation** et cliquez sur **Next**.
+
 <P ALIGN="center"><IMG src="..\Ressources/Annexes S03/ScreenShot Windows Core/Install_Step_02.png" width=500></P>
 
-#### Étape 3 : Type d'installation  
+#### Étape 3 : Type d'installation
 
-Choisir le type d'installation en **Custom**.  
+Choisir le type d'installation en **Custom**.
+
 <P ALIGN="center"><IMG src="..\Ressources/Annexes S03/ScreenShot Windows Core/Install_Step_03.png" width=500></P>
 
-Sélectionner le disque principal et cliquez sur **Next**.  
+Sélectionner le disque principal et cliquez sur **Next**.
+
 <P ALIGN="center"><IMG src="..\Ressources/Annexes S03/ScreenShot Windows Core/Install_Step_03-1.png" width=500></P>
 
-#### Étape 4 : Installation  
+#### Étape 4 : Installation
 
-Une fois l'étape 3 finie l'installation se lance, à la fin de celle-ci le PC redémarre.  
+Une fois l'étape 3 finie l'installation se lance, à la fin de celle-ci le PC redémarre.
+
 <P ALIGN="center"><IMG src="..\Ressources/Annexes S03/ScreenShot Windows Core/Install_Step_04.png" width=500></P>
 
-#### Étape 5 : Mot de passe    
+#### Étape 5 : Mot de passe
 
-Une fois que le PC à redémarré, on vous demande de changer le mot de passe, sélectionnez **OK** et appuyez sur la touche **Entrée**.  
-<P ALIGN="center"><IMG src="..\Ressources/Annexes S03/ScreenShot Windows Core/Install_Step_05.png" width=500></P>  
+Une fois que le PC à redémarré, on vous demande de changer le mot de passe, sélectionnez **OK** et appuyez sur la touche **Entrée**.
 
-Renseignez votre mot de passe et appuyez sur la touche **Entrée**. Si cela ne fonctionne pas, vérifiez que le mot de passe soit bien identique dans les deux champs **New password** et **Confirm password**  
+<P ALIGN="center"><IMG src="..\Ressources/Annexes S03/ScreenShot Windows Core/Install_Step_05.png" width=500></P>
+
+Renseignez votre mot de passe et appuyez sur la touche **Entrée**. Si cela ne fonctionne pas, vérifiez que le mot de passe soit bien identique dans les deux champs **New password** et **Confirm password**
+
 <P ALIGN="center"><IMG src="..\Ressources/Annexes S03/ScreenShot Windows Core/Install_Step_05-1.png" width=500></P>
 
-Une fois le mot de passe modifié, un message de confirmation s'affiche, vous pouvez appuyez sur la touche **Entrée**.  
+Une fois le mot de passe modifié, un message de confirmation s'affiche, vous pouvez appuyez sur la touche **Entrée**.
+
 <P ALIGN="center"><IMG src="..\Ressources/Annexes S03/ScreenShot Windows Core/Install_Step_05-2.png" width=500></P>
 
-### 2 - Paramètres  
+### 2 - Paramètres
 
-#### Étape 1 : Configuration IP  
+#### Étape 1 : Configuration IP
 
-Entrée le chiffre **8** pour modifier les paramètres réseaux.  
+Entrée le chiffre **8** pour modifier les paramètres réseaux.
+
 <P ALIGN="center"><IMG src="..\Ressources/Annexes S03/ScreenShot Windows Core/Param_Step_01.png" width=500></P>
 
-Selectionnez l'index de la carte réseau à modifier _(ici l'index 1)_.  
+Selectionnez l'index de la carte réseau à modifier _(ici l'index 1)_.
+
 <P ALIGN="center"><IMG src="..\Ressources/Annexes S03/ScreenShot Windows Core/Param_Step_01-1.png" width=500></P>
 
 Pour modifier l'IP, choisir le chiffre **1**.  
 Pour une IP statique, choisir **S** _(il est possible de choisir par DHCP si celui est configuré sur votre réseau)_  
 Renseignez votre IP (dans cet exemple **172.18.1.2**), puis le masque de réseau **255.255.0.0** (/16).  
 Enfin l'adresse IP de votre passerelle par défaut, ici ce sera **172.18.0.1**.  
-Un message vous affichera si l'opération à réussi. Vous pouvez appuyer sur **Entrée** pour revenir au menu.  
+Un message vous affichera si l'opération à réussi. Vous pouvez appuyer sur **Entrée** pour revenir au menu.
+
 <P ALIGN="center"><IMG src="..\Ressources/Annexes S03/ScreenShot Windows Core/Param_Step_01-2.png" width=500></P>
 
-#### Étape 2 : Ajout au domaine  
+#### Étape 2 : Ajout au domaine
 
-Pour ajouter votre PC à un domaine existant, choisissez l'option **1**  
+Pour ajouter votre PC à un domaine existant, choisissez l'option **1**
+
 <P ALIGN="center"><IMG src="..\Ressources/Annexes S03/ScreenShot Windows Core/Param_Step_02.png" width=500></P>
 
 Selectionner **D** pour le domaine et renseignez le nom du domaine à joindre, ici **billu.com**  
 Spécifiez un utilisateur autorisé sur ce domaine, ici **BILLU\Administrator** et renseignez le mot de passe.  
-Un message vous informera si l'opération a réussi.  
+Un message vous informera si l'opération a réussi.
+
 <P ALIGN="center"><IMG src="..\Ressources/Annexes S03/ScreenShot Windows Core/Param_Step_02-1.png" width=500></P>
 
-Vous devriez maintenant voir votre nom de domaine en face de l'option **1**.  
+Vous devriez maintenant voir votre nom de domaine en face de l'option **1**.
+
 <P ALIGN="center"><IMG src="..\Ressources/Annexes S03/ScreenShot Windows Core/Param_Step_02-2.png" width=500></P>
 
 </details>
@@ -171,7 +148,6 @@ Vous devriez maintenant voir votre nom de domaine en face de l'option **1**.
   -Nous continuons la validation avec l'installation du programme GRUB -![installation de grub](https://github.com/user-attachments/assets/987204ca-c70d-4332-8af4-90e4c383c036)
   -Et normalement, on a juste à attendre la fin de l'installation pour ensuite accéder à notre machine Debian. -![fin d'instalation ](https://github.com/user-attachments/assets/0deb1713-edf1-4be1-a6d2-14792086e4ed) -![a](https://github.com/user-attachments/assets/61723781-e4db-4e31-8def-8e129ca36552)
 
-
 ## Configuration SSH sur Debian
 
 1.  Ouvrir le terminal et tapez la commande :
@@ -214,7 +190,6 @@ sudo systemctl start ssh
 
 - ## Configuration SSH sur Windows server
 
-
 - **1.** Cliquez sur le bouton Démarrer et sélectionnez "Paramètres" (ou appuyez sur Win + I) Dans les Paramètres, allez dans "Applications"
 
 - **2.** Sélectionnez "Fonctionnalités facultatives" Cliquez sur "Ajouter une fonctionnalité facultative"
@@ -223,8 +198,8 @@ sudo systemctl start ssh
 
 - **4.** Redémarrez pour que les modifications prennent effet
 
-- **5.** Connexion via PowerShell : lancer powershell en tant qu administrateur, 
-     en suite Utilisez la commande suivante pour vous connecter à votre serveur Debian
+- **5.** Connexion via PowerShell : lancer powershell en tant qu administrateur,
+  en suite Utilisez la commande suivante pour vous connecter à votre serveur Debian
 
 ```bash
  ssh user@server_ip
@@ -234,4 +209,3 @@ Remplacez user par votre nom d'utilisateur Debian et server_ip par l'adresse IP 
 utilisateur Debian lorsque vous y êtes invité.
 
 </details>
-
