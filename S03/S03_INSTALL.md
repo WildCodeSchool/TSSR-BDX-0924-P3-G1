@@ -145,31 +145,37 @@ Vous devriez maintenant voir votre nom de domaine en face de l'option **1**.
 
 ### Configuration
 
-- Cliquez sur "Graphical install"
-- ![graphique](https://github.com/user-attachments/assets/2d684241-d7c1-4e5b-a1a0-25fb145e0be6)
+- Cliquez sur "install"
+- ![1](https://github.com/user-attachments/assets/095cc155-1717-4fa3-84ee-9ee33f176dd9)
+- Nous sélectionnons le pays pour le fuseau horaire
+- ![3](https://github.com/user-attachments/assets/27ea014e-2679-4e59-8115-5ab639455c20)
 - On choisie la langue pour faire l'installation
-- ![3 langue-install 3](https://github.com/user-attachments/assets/cd51ef36-1a80-4066-a4f3-c1d0846a42c2)
+- ![langue](https://github.com/user-attachments/assets/a5bfc614-e0eb-45bb-9b00-c260ef390be0)
 - On établit le nom d'hôte
-- ![5-hostname](https://github.com/user-attachments/assets/54825be5-8ffb-4080-83e9-36470236d3cf)
+- ![login](https://github.com/user-attachments/assets/d414e067-e22a-45f3-9839-34085c8e8be6)
 - On désigne également un nom de domaine.
-- ![6 nom de domain](https://github.com/user-attachments/assets/5bb4e695-867a-4dcf-a61c-7327ed328b0c)
+- ![nom du domain ](https://github.com/user-attachments/assets/8a986adb-0069-4ecf-9dee-dee41e8468a8)
 - On définie un mot de passe
-- ![7 PassWORD](https://github.com/user-attachments/assets/b0a2a6c1-776b-425c-9b60-9f00e0f04996)
+- ![psswdlogin](https://github.com/user-attachments/assets/ea9183da-5f2b-4ea6-ac55-d5e885b985f0)
 - On définie le nom de l'utilisateur
-- ![8 username](https://github.com/user-attachments/assets/5e2a02c5-654e-452b-83a9-f2e6f43093e5)
+- ![login](https://github.com/user-attachments/assets/c0f8e284-a5ac-4c02-860b-ccaa1d18e02e)
 - puis on rajoute un mot de pass
-- ![7 PassWORD](https://github.com/user-attachments/assets/b0a2a6c1-776b-425c-9b60-9f00e0f04996)
-
-- On partitionne notre disque selon nous besoin.
-- ![10 partition-d](https://github.com/user-attachments/assets/7b222862-4aef-47f9-b37a-4a8969efc266)
-
+-  ![psswdlogin](https://github.com/user-attachments/assets/ea9183da-5f2b-4ea6-ac55-d5e885b985f0)
+- Nous organisons notre disque dur en fonction de nos besoins
+- ![partitionnement ](https://github.com/user-attachments/assets/91b1b169-f5c7-4a80-b17d-4d06478164b8)
 - Nous continuons à valider jusqu'à ce qu'il nous demande de configurer la gestion de packages, et à ce moment-là, nous l'acceptons et choisissons cette option.
-  deb.debian.org -![deb debian org](https://github.com/user-attachments/assets/660b7ff2-1195-49cf-9005-336d87ccbc1e)
-  -Nous continuons la validation jusqu'à ce qu'il nous demande de paramétrer l'environnement de bureau de notre machine, et nous faisons notre choix selon nos
-  besoins.
-- ![ssh](https://github.com/user-attachments/assets/f06ff4e7-7cea-410a-8d33-867d7babcf09)
-  -Nous continuons la validation avec l'installation du programme GRUB -![installation de grub](https://github.com/user-attachments/assets/987204ca-c70d-4332-8af4-90e4c383c036)
-  -Et normalement, on a juste à attendre la fin de l'installation pour ensuite accéder à notre machine Debian. -![fin d'instalation ](https://github.com/user-attachments/assets/0deb1713-edf1-4be1-a6d2-14792086e4ed) -![a](https://github.com/user-attachments/assets/61723781-e4db-4e31-8def-8e129ca36552)
+  deb.debian.org
+-![meroir ](https://github.com/user-attachments/assets/aac6f828-19ff-4387-9a84-da2618921008)
+-Nous continuons la validation jusqu'à ce qu'il nous demande de paramétrer l'environnement de bureau de notre machine, et nous faisons notre choix selon nos
+-besoins Pour notre projet, nous décochons Debian Desktop et Gnome, tout en cochant les cases pour **serveur web** et **SSH**.
+- ![desktop1](https://github.com/user-attachments/assets/3fa123dc-9853-4553-bbb5-a2255adf2864)
+-Nous continuons la validation avec l'installation du programme GRUB
+-![grub1](https://github.com/user-attachments/assets/6ca1e601-eef1-48d0-ad2a-afc4195a3589)
+-Et normalement, on a juste à attendre la fin de l'installation pour ensuite accéder à notre machine Debian.
+-![installation terminer ](https://github.com/user-attachments/assets/3491a2b3-6f52-4532-a47d-4b8d9b5e79f2)
+
+- ![debianconsol](https://github.com/user-attachments/assets/302b6390-9883-4820-855a-9965ba824f57)
+  
 
 
 ## Configuration SSH sur Debian
