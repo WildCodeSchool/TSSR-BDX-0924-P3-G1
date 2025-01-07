@@ -161,27 +161,27 @@ Une fois le serveur Core ajouté au domaine, ajoutez les rôles nécessaires à 
  - RSAT-AD-Tools : Outils d'administration graphique  
  - AD-Domain-Services : Services de domaine Active Directory  
 
-<P ALIGN="center"><IMG src="..\Ressources/Annexes S02/" width=500></P>  
+<P ALIGN="center"><IMG src="..\Ressources/Annexes S02/SC_ajout_dc_srvcore_01.png" width=500></P>  
 
 Une fois ces opérations effectuées, rendez-vous sur le serveur graphique dans Server Manager et cliquez sur **Manage > Add Server**.  
 
 Recherchez votre serveur par son nom et ajoutez-le.  
 
-<P ALIGN="center"><IMG src="..\Ressources/Annexes S02/" width=500></P>  
+<P ALIGN="center"><IMG src="..\Ressources/Annexes S02/SC_ajout_dc_srvcore_01b.png" width=500></P>  
 Une fois ajouté, vous pouvez le promouvoir en contrôleur de domaine en cliquant sur le petit icône drapeau.  
 
-<P ALIGN="center"><IMG src="..\Ressources/Annexes S02/" width=500></P>  
+<P ALIGN="center"><IMG src="..\Ressources/Annexes S02/SC_ajout_dc_srvcore_02.png" width=500></P>  
 Renseignez les paramètres comme indiqué sur la capture d'écran. Pour les credentials, utilisez un utilisateur du domaine et son mot de passe (un compte administrateur). Cliquez sur **Next**.
 
-<P ALIGN="center"><IMG src="..\Ressources/Annexes S02/" width=500></P>  
+<P ALIGN="center"><IMG src="..\Ressources/Annexes S02/SC_ajout_dc_srvcore_03.png" width=500></P>  
 Cochez ensuite les cases DNS et GC, puis définissez un mot de passe. Cliquez sur **Next**.  
 
-<P ALIGN="center"><IMG src="..\Ressources/Annexes S02/" width=500></P>    
+<P ALIGN="center"><IMG src="..\Ressources/Annexes S02/SC_ajout_dc_srvcore_04.png" width=500></P>    
 Pour la réplication, choisissez le serveur à partir duquel vous voulez répliquer. Ici, nous allons choisir notre serveur principal Thor. Cliquez sur **Next**.  
 
-<P ALIGN="center"><IMG src="..\Ressources/Annexes S02/" width=500></P>  
+<P ALIGN="center"><IMG src="..\Ressources/Annexes S02/SC_ajout_dc_srvcore_05.png" width=500></P>  
 Continuez à cliquer sur **Next** jusqu’à l’installation.  
 
-<P ALIGN="center"><IMG src="..\Ressources/Annexes S02/" width=500></P>  
+<P ALIGN="center"><IMG src="..\Ressources/Annexes S02/SC_ajout_dc_srvcore_06.png" width=500></P>  
 Une fois l’installation terminée, redémarrez le serveur.  
 
