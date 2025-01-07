@@ -45,7 +45,7 @@ A partir de templates mis à notre disposition, nous pouvons installer nos machi
 
 7. Cliquer sur `Next` jusqu'à la fin de l'assistant d'installation puis cliquer sur `Install`. S'il ne le fait pas automatiquement, redémarrer l'ordinateur afin qu'il prenne en charge ses nouveaux rôles.
 
-## Création du domaine dans l'AD
+## Création du domaine "billu.com" dans l'AD
 
 Pour créer un nouveau domaine, nous devons définir ce serveur en tant que _Domain Controller_. En suivant le wizard de configuration, cocher `Add a new forest` et entrer le nom de domaine choisi.
 
@@ -67,3 +67,8 @@ Selon le schéma établit, nous pouvons créer nos **UO**. Une UO _France_ est c
 2. Répéter ces actions en respectant la structure prévue par le schéma.
 
 <P ALIGN="center"><IMG src="..\Ressources\Annexes S02\Capture_UO_AD.png" width=500></P>
+
+## Configuration du DHCP
+Maintenant que le rôle DHCP est installé, nous pouvons passer à configuration. En rapport avec le schéma réseau établit, nous pouvons accorder un scope d'adresses IP par Département.
+
+<P ALIGN="center"><IMG src="..\Ressources\Annexes S02\Scopes_DHCP.png" width=500></P>
