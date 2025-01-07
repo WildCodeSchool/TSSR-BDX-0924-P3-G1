@@ -171,16 +171,16 @@ Recherchez votre serveur par son nom et ajoutez-le.
 Une fois ajouté, vous pouvez le promouvoir en contrôleur de domaine en cliquant sur le petit icône drapeau.  
 
 <P ALIGN="center"><IMG src="..\Ressources/Annexes S02/SC_ajout_dc_srvcore_02.png" width=500></P>  
-Renseignez les paramètres comme indiqué sur la capture d'écran. Pour les credentials, utilisez un utilisateur du domaine et son mot de passe (un compte administrateur). Cliquez sur **Next**.
+Renseignez les paramètres comme indiqué sur la capture d'écran. Pour les credentials, utilisez un utilisateur du domaine et son mot de passe (un compte administrateur). Cliquez sur <b>Next</b>.
 
 <P ALIGN="center"><IMG src="..\Ressources/Annexes S02/SC_ajout_dc_srvcore_03.png" width=500></P>  
-Cochez ensuite les cases DNS et GC, puis définissez un mot de passe. Cliquez sur **Next**.  
+Cochez ensuite les cases DNS et GC, puis définissez un mot de passe. Cliquez sur <b>Next</b>.  
 
 <P ALIGN="center"><IMG src="..\Ressources/Annexes S02/SC_ajout_dc_srvcore_04.png" width=500></P>    
-Pour la réplication, choisissez le serveur à partir duquel vous voulez répliquer. Ici, nous allons choisir notre serveur principal Thor. Cliquez sur **Next**.  
+Pour la réplication, choisissez le serveur à partir duquel vous voulez répliquer. Ici, nous allons choisir notre serveur principal Thor. Cliquez sur <b>Next</b>.  
 
 <P ALIGN="center"><IMG src="..\Ressources/Annexes S02/SC_ajout_dc_srvcore_05.png" width=500></P>  
-Continuez à cliquer sur **Next** jusqu’à l’installation.  
+Continuez à cliquer sur <b>Next</b> jusqu’à l’installation.  
 
 <P ALIGN="center"><IMG src="..\Ressources/Annexes S02/SC_ajout_dc_srvcore_06.png" width=500></P>  
 Une fois l’installation terminée, redémarrez le serveur.  
