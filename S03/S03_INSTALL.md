@@ -19,7 +19,7 @@ CREATION
 6. Dans l'onglet de droite, sélectionner `Don't run specified Windows Applications`
 7. Cocher `Enabled`, puis cliquer sur `Show` et rentrer les applications suivantes :
 
-<P ALIGN="center"><IMG src="..\Ressources\Annexes S02\Capture_UO_AD.png" width=500></P>
+<P ALIGN="center"><IMG src="..\Ressources\Annexes S03\GPO_Powershell_config1.png" width=500></P>
 
 8. Cliquer sur `OK` puis `Apply`
 
@@ -28,4 +28,5 @@ CONFIGURATION
 2. Sélectionner, parmi la liste des GPO existantes, "USERS_Security_Powershell"
 La GPO est bien appliquée sur cette UO et à toutes celles qui en héritent.
 
-<P ALIGN="center"><IMG src="..\Ressources\Annexes S02\Capture_UO_AD.png" width=500></P>
+<P ALIGN="center"><IMG src="..\Ressources\Annexes S03\GPO_Powershell_result.png" width=500></P>
+
