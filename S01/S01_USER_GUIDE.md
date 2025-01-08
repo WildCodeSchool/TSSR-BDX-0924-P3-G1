@@ -4,7 +4,7 @@
 
 Voici le plan prévisionnel du réseau, ce plan peut être amené a etre modifié.  
 
-![Diagramme_reseau](/Ressources/S01_diagramme_reseau_billu.jpg)
+<P ALIGN="center"><IMG src="..\Ressources\Annexes S01\S01_diagramme_reseau_billu.jpg" width=500></P>
 
 ## Plan d'adressage IP
 
