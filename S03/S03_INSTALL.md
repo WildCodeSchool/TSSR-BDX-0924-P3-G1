@@ -87,3 +87,8 @@ Vérification lors d'un changement de mot de passe pour un utilisateur.
 
 ### 2.1 - Ajout d'une machine Windows 10
 
+<P ALIGN="center"><IMG src="..\Ressources/Annexes S03/Sc_add_pc_domain_01.png" width=500></P>  
+<P ALIGN="center"><IMG src="..\Ressources/Annexes S03/Sc_add_pc_domain_02.png" width=500></P>  
+<P ALIGN="center"><IMG src="..\Ressources/Annexes S03/Sc_add_pc_domain_03.png" width=500></P>  
+<P ALIGN="center"><IMG src="..\Ressources/Annexes S03/Sc_add_pc_domain_04.png" width=500></P>  
+<P ALIGN="center"><IMG src="..\Ressources/Annexes S03/Sc_add_pc_domain_05.png" width=500></P>  
