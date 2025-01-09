@@ -3,12 +3,27 @@
 # P3-G1 BILLU
 
 ==============================
+<HR>
 
-## Mise en place de Group Policy Object 
+## SOMMAIRE :  
+### 1 - Mise en place de Group Policy Object
+  - ### 1.1 - GPO de sécurité - Politique de sécurité PowerShell
+  - ### 1.2 - GPO de sécurité - Stratégie de mot de passe
+  - ### 1.3 - GPO de sécurité -
+  - ### 1.4 - GPO standard -
+  - ### 1.5 - GPO standard -
+  - ### 1.6 - GPO standard -
+
+### 2 - Ajout d'une machine au domaine 
+  - ### 2.1 - Ajout d'une machine Windows 10
+
+<HR>
+
+## 1 - Mise en place de Group Policy Object 
 
 Nos unités organisationnelles et nos groupes sont mis en place. Nous avons décidé d'implémenter certaines GPO pour paramétrer la sécurité et la configuration des machines clientes.
 
-### GPO de sécurité - Politique de sécurité PowerShell            
+### 1.1 - GPO de sécurité - Politique de sécurité PowerShell            
 Cette GPO sert à bloquer l'accès de la console PowerShell à tous les utilisateurs non abilités et qui n'en ont pas l'utilité.                  
 **CREATION**
 1. Cliquer sur Tools ---> Group Policy Management
@@ -30,7 +45,7 @@ La GPO est bien appliquée sur cette UO et à toutes celles qui en héritent.
 
 <P ALIGN="center"><IMG src="..\Ressources\Annexes S03\GPO_Powershell_result.png" width=500></P>
 
-### GPO de sécurité - Stratégie de mot de passe  
+### 1.2 - GPO de sécurité - Stratégie de mot de passe  
 Cette GPO sert à contrôler au mieux les comportements des salariés par l’instauration de règles (longueur minimale du mot de passe, expiration, etc.).  
 <br>
 **CREATION**  
@@ -62,3 +77,13 @@ Ici vous pouvez modifier les paramètres souhaités pour la sécurité des mots 
 Une fois les paramètres modifiés, vous pouvez vérifier s'ils ont bien été pris en compte en accédant à l’onglet _Settings_ de l’interface _Default Domain Policy_.
 
 <P ALIGN="center"><IMG src="..\Ressources\Annexes S03\SC_ajout_gpo_mdp_03.png" width=500></P>
+
+Vérification lors d'un changement de mot de passe pour un utilisateur.  
+<P ALIGN="center"><IMG src="..\Ressources\Annexes S03\SC_ajout_gpo_mdp_05.png" width=500></P>
+
+
+
+## 2 - Ajout d'une machine au domaine  
+
+### 2.1 - Ajout d'une machine Windows 10
+
