@@ -9,7 +9,7 @@
 Nos unités organisationnelles et nos groupes sont mis en place. Nous avons décidé d'implémenter certaines GPO pour paramétrer la sécurité et la configuration des machines clientes.
 
 **GPO de sécurité - Politique de sécurité PowerShell**            
-Cette GPO sert à bloquer l'accès de la console PowerShell à tous les utilisateurs non abilités et qui n'en ont pas l'utilité.
+Cette GPO sert à bloquer l'accès de la console PowerShell à tous les utilisateurs non abilités et qui n'en ont pas l'utilité.                  
 CREATION
 1. Cliquer sur Tools ---> Group Policy Management
 2. Clic-droit sur `Group Policy Object` ---> `New` ---> Entrer un nom pertinent en rapport avec l'usage de la GPO. Ici, nous l'avons nommé "USERS_Security_Powershell"
