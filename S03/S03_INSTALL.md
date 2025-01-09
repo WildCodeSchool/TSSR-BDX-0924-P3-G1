@@ -79,7 +79,7 @@ Une fois les paramètres modifiés, vous pouvez vérifier s'ils ont bien été p
 <P ALIGN="center"><IMG src="..\Ressources\Annexes S03\SC_ajout_gpo_mdp_03.png" width=500></P>
 
 Vérification lors d'un changement de mot de passe pour un utilisateur.  
-<P ALIGN="center"><IMG src="..\Ressources\Annexes S03\SC_ajout_gpo_mdp_05.png" width=500></P>
+<P ALIGN="center"><IMG src="..\Ressources\Annexes S03\SC_ajout_gpo_mdp_04.png" width=500></P>
 
 
 
