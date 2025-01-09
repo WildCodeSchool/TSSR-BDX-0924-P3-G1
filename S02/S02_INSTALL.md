@@ -313,4 +313,76 @@ sudo systemctl start ssh
 Remplacez user par votre nom d'utilisateur Debian et server_ip par l'adresse IP de votre serveur Debian , puis vous Saisissez le mot de passe de votre
 utilisateur Debian lorsque vous y êtes invité.
 
+
+## integration du serveur debian au domaine BillU.com
+
+- Un domaine Active Directory fonctionnel (`Billu.com`)
+- Un serveur Debian avec l'adresse IP `172.18.255.3`
+- Accès root sur le serveur Debian
+
+## Étapes
+
+ 1. Installer les paquets nécessaires
+
+Ouvrez un terminal et installez les paquets nécessaires :
+
+```bash
+sudo apt update
+sudo apt install realmd libnss-sss libpam-sss sssd sssd-tools adcli samba-common-bin oddjob oddjob-mkhomedir packagekit
+```
+
+2. Utilisez la commande suivante pour découvrir le domaine Active Directory
+
+```bash
+sudo realm discover Billu.com
+sudo realm join -U administrator Billu.com
+
+```
+
+
+ 3. Redémarrer les services
+
+```bash
+sudo systemctl restart sssd
+sudo systemctl status sssd
+```
+Si nous respectons ces étapes, notre machine sera visible dans la rubrique "computer" d'Active Directory.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </details>
