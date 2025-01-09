@@ -221,6 +221,8 @@ Une fois l’installation terminée, redémarrez le serveur.
 ### Configuration
 
 - Cliquez sur "Graphical install"
+  
+<P ALIGN="center"><IMG src="../Ressources/Annexes S02/capture_debian_lci.png" width=500></P> 
 - ![graphique](https://github.com/user-attachments/assets/2d684241-d7c1-4e5b-a1a0-25fb145e0be6)
 - On choisie la langue pour faire l'installation
 - ![3 langue-install 3](https://github.com/user-attachments/assets/cd51ef36-1a80-4066-a4f3-c1d0846a42c2)
