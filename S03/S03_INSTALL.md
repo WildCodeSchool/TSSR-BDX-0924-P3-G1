@@ -106,14 +106,14 @@ ATTENTION ! Pensez à bien redémarrer votre machine pour appliquer les changeme
 
 ## 3 - Création d'un serveur GLPI sur une VM Debian 12 (CLI)
 
-### A - Pré-requis
+###  Pré-requis
 
 - Une VM Debian 12 
   - Nom de compte : `root`
   - Mot de passe : `Azerty1*`
   - Adresse IP : `172.18.255.3`
 
-### B - Préparation du serveur GLPI
+###   Préparation du serveur GLPI
 
 ### ***Mise à jour du système***
 
