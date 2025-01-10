@@ -85,10 +85,21 @@ Vérification lors d'un changement de mot de passe pour un utilisateur.
 
 ## 2 - Ajout d'une machine au domaine  
 
-### 2.1 - Ajout d'une machine Windows 10
+### 2.1 - Ajout d'une machine Windows 10 à un domaine.
 
+Ouvir les _Settings_ et cliquer sur _About_ 
 <P ALIGN="center"><IMG src="..\Ressources/Annexes S03/Sc_add_pc_domain_01.png" width=500></P>  
+
+Dans _About_, cliquer sur l'option _Advanced system settings_ et une fois la fenêtre ouverte, aller dans l'onglet _Computer Name_ et cliquer sur _Change..._  
 <P ALIGN="center"><IMG src="..\Ressources/Annexes S03/Sc_add_pc_domain_02.png" width=500></P>  
+
+Modifier le nom de l'ordinateur et changer l'option `Member of` sur _Domain_ avec le nom de domaine (ici billu.com) puis cliquer sur _ok_  
 <P ALIGN="center"><IMG src="..\Ressources/Annexes S03/Sc_add_pc_domain_03.png" width=500></P>  
+
+Utiliser un compte administrateur pour effectuer les changements.
 <P ALIGN="center"><IMG src="..\Ressources/Annexes S03/Sc_add_pc_domain_04.png" width=500></P>  
+
+Si tout est configuré correctement, vous devriez voir ce message.  
 <P ALIGN="center"><IMG src="..\Ressources/Annexes S03/Sc_add_pc_domain_05.png" width=500></P>  
+
+ATTENTION ! Pensez à bien redémarrer votre machine pour appliquer les changements.  
