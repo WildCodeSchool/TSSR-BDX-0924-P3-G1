@@ -3,5 +3,6 @@
 | 172.18.255.1    | Thor         | AD - DHCP - DNS             |
 | 172.18.255.2    | IronMan      | AD principal - DNS          |
 | 172.18.255.3    | Deadpool     | Serveur Debian12 GLPI       |
-| 172.18.255.4    | SpiderMan    | Serveur supervision Zabbix  |  
+| 172.18.255.4    | SpiderMan    | Serveur supervision Zabbix  |
+| 172.18.255.5    | Hulk         | Serveur messagerie iRedMail |
 | 172.18.255.254  | pfsense      | Adresse du routeur          |  
