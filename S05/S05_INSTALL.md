@@ -1,49 +1,8 @@
 ==============================
 
-# Guide Aministrateur
+# P3-G1 BILLU
 
 ==============================
-
-## Pré-Requis techniques
-
-| **Système**  | **Windows Server 2022 Graphic** | **Windows Server 2022 Core** | **Serveur Debian12** |
-| ------------ | ------------------------------- | ---------------------------- | -------------------- |
-| **HostName** | SRV-DC-01                       | SRV-DC-02                    | VM-SRV-01            |
-| **Login**    | Administrator                   | Administrator                | Administrator        |
-| **Password** | Azerty1\*                       | Azerty1\*                    | Azerty1\*            |
-
-## Installation de l'ADDS, DHCP et DNS sur Windows Server Graphic
-
-1. Cliquer sur _Manage_ puis _Add Roles and Features_.
-<P ALIGN="center"><IMG src="..\Ressources\Annexes S02\Capture d'écran 2024-11-28 140642.png" width=500></P>
-
-2. Sélectionner _Role-based or feature-based installation_.
-3. Sélectionner le serveur.
-4. Sélectionner _Active Directory Domain Services_ puis cliquer sur l'option `Add features`.
-5. De la même manière, cocher sur _DHCP Server_ puis cliquer sur l'option `Add features`.
-6. Cocher ensuite sur _DNS Server_ puis cliquer sur l'option `Add features`.
-
-<P ALIGN="center"><IMG src="..\Ressources\Annexes S02\Capture d'écran 2024-11-28 142055.png" width=500></P>
-
-7. Cliquer sur `Next` jusqu'à la fin de l'assistant d'installation puis cliquer sur `Install`. S'il ne le fait pas automatiquement, redémarrer l'ordinateur afin qu'il prenne en charge ses nouveaux rôles.
-
-## Mise en place de la structure organisationnelle dans l'Active Directory sur Windows Server Graphic
-
-Voici le schéma des Unités Organisationnelles et des groupes. Les groupes ont été définis en fonction des différents droits d'accès.
-
-<P ALIGN="center"><IMG src="..\Ressources\Annexes S03\Schema_UO_Gpes.png" width=500></P>
-
-**Unités Organisationnelles**
-
-1. Cliquer sur Tools ---> Active Directory Users ans Computers
-2. Clic droit sur billu.com ---> New ---> Organizational Unit---> Entrer le nom "Direction"
-3. Clic-droit sur cette nouvelle UO "Direction" ---> New ---> UO pour ajouter une nouvelle UO dans l'UO "Direction"---> Entrer le nom "Directeur"
-4. Répéter ces actions en respectant la structure prévue par le schéma.
-
-**Groupes**
-
-1. Dans une UO "Groupes", clic-droit sur cette UO ---> New ---> Group ---> Entrer le nom "Admin_Sys"
-2. Répéter ces actions en respectant la structure prévue par le schéma.
 
 ## Installation Serveur Debian12
 
