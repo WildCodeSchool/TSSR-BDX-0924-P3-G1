@@ -9,13 +9,11 @@
 ### 1 - Mise en place de Group Policy Object
   - ### 1.1 - GPO de sécurité - Politique de sécurité PowerShell
   - ### 1.2 - GPO de sécurité - Stratégie de mot de passe
-  - ### 1.3 - GPO de sécurité -
-  - ### 1.4 - GPO standard -
-  - ### 1.5 - GPO standard -
-  - ### 1.6 - GPO standard -
 
 ### 2 - Ajout d'une machine au domaine 
   - ### 2.1 - Ajout d'une machine Windows 10
+    
+### 3 - Création d'un serveur GLPI sur une VM Debian 12 (CLI)
 
 <HR>
 
