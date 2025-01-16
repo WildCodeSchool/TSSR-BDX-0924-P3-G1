@@ -9,6 +9,7 @@
 ### 1 - Mise en place de Group Policy Object
   - ### 1.1 - GPO de sécurité - Politique de sécurité PowerShell
   - ### 1.2 - GPO de sécurité - Stratégie de mot de passe
+  - ### 1.3 - GPO de sécurité - Blocage complet ou partiel au panneau de configuration
 
 ### 2 - Ajout d'une machine au domaine 
   - ### 2.1 - Ajout d'une machine Windows 10
@@ -77,7 +78,25 @@ Une fois les paramètres modifiés, vous pouvez vérifier s'ils ont bien été p
 <P ALIGN="center"><IMG src="..\Ressources\Annexes S03\SC_ajout_gpo_mdp_03.png" width=500></P>
 
 Vérification lors d'un changement de mot de passe pour un utilisateur.  
-<P ALIGN="center"><IMG src="..\Ressources\Annexes S03\SC_ajout_gpo_mdp_04.png" width=500></P>
+<P ALIGN="center"><IMG src="..\Ressources\Annexes S03\ajout_gpo_mdp_04.png" width=500></P>
+
+### 1.3 - GPO de sécurité - Blocage complet ou partiel au panneau de configuration
+
+**A : CREATION**  
+1. Cliquer sur _Tools_ > _Group Policy Management_  
+2. Cliquer sur _Domains_ > _billu.com
+3. Clique droit sur le domaine puis "Create a GPO in this domain, and Link it here"
+   <P ALIGN="center"><IMG src="..\Ressources\Annexes S03\capture d'ecran creation de de la gpo (CP).png" width=500></P>
+4. donner un nom a la GPO  par exemple : Block Control Panel Access for Non-Admins 
+ 
+**B : Configuration**
+1. clique droit sur la nouvelle GPO Accédez à _User Configuration_ > _Policies_ > _Administrative Templates_ > _Control Panel_
+2. clique sur _Prohibit access to Control Panel and PC settings_ > _Apply_ puis sur _ok_
+   <P ALIGN="center"><IMG src="..\Ressources\Annexes S03\gpo-panelControl.png" width=500></P>
+3. tester avec un poste client Essayez d'accéder au Panneau de configuration et normalement Vous devriez avoir cela
+    
+     <P ALIGN="center"><IMG src="..\Ressources\Annexes S03\capture d'ecran paneau de configuration.png" width=500></P>
+
 
 
 
