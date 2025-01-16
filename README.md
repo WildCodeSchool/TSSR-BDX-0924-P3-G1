@@ -51,3 +51,23 @@ Suite...
 
 Nous avons accumulé beaucoup de retard nous obligeant à revoir nos objectifs et ne garder que les principaux. Le choix a été fait en début de sprint de tout recommencer de puis le début pour repartir sur de bonnes bases concernant nos VM sur Proxmox avec une nomenclature adaptée, et une configuration respectant les objectifs définis. Nous avons aussi dû réévaluer la conception de notre réseau. Concernant l'intégration des utilisateurs dans l'AD, nous avons rencontré quelques problèmes pour l'automatisation avec un script. L'intégration des utilisateurs dans les UO fonctionne en script mais pas l'intégration dans les groupes (services). L'installation de GLPI s'est correctement déroulée main il subsiste encore quelques problèmes concernant la configuration. Gérer notre temps a été notre plus grande problématique, un retard encore subsiste, toutes les GPO n'ont pas encore été crées et l'installation et la configuration de GLPI doivent être finalisées.
 
+### Sprint 7 - 13/01/25 au 17/01/25
+
+| Équipe  |  Rôle      |     Supervision - Zabbix     |        GLPI       |     Sécurité - pfSense      |        GPO        |         Messagerie          |
+| :-----: | :--------: | :--------------------------: | :---------------: | :-------------------------: | :---------------: | :-------------------------: |
+|         |            |          Principal           |     Principal     |          Principal          |     Principal     |          Principal          |
+|  Hamza  |     SM     |                              |         X         |               X             |         X         |                             |
+| Anthony | Technicien |               X              |                   |                             |         X         |                             |
+|  Fred   |     PO     |                              |                   |                             |         X         |               X             |
+|         |            |        100% le 03/01         |    70% le 17/01   |         0% le 17/01         |    80% le 17/01   |        100% le 17/01        |
+
+suite : objectifs secondaires et optionnels
+
+| Équipe  |  Rôle      |    Gestion de mot de passe   |  Gestion de projet - RedMine  |
+| :-----: | :--------: | :--------------------------: | :---------------------------: | 
+|         |            |          Secondaire          |           Optionnel           |
+|  Hamza  |     SM     |                              |                               |
+| Anthony | Technicien |                              |                               |
+|  Fred   |     PO     |                              |                               |
+|         |            |         0% le 17/01          |         0% le 17/01           |
+
