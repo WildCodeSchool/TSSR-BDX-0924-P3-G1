@@ -31,11 +31,11 @@ Puis cliquer sur `Login`
 
 <P ALIGN="center"><IMG src="..\Ressources\Annexes S07\Capture_iRedAdmin_1.png" width=600></P>
 
-Le tableau de bord de iRedAdmin s'ouvre, on peut maintenant ajouter un utilisateur de notre domaine. Cliquer sur le bouton `+ Add...` et rentrer les informations de l'utilisateur Adam Thomas du département développement Logiciel, et lui attribuer un mot de passe.
+Le tableau de bord de iRedAdmin s'ouvre, on peut maintenant ajouter un utilisateur de notre domaine. Cliquer sur le bouton `+ Add...` puis `User` et rentrer les informations de l'utilisateur Adam Thomas du département Développement Logiciel, et lui attribuer un mot de passe.
 
 <P ALIGN="center"><IMG src="..\Ressources\Annexes S07\Capture_iRedAdmin_2.png" width=600></P>
 
-On peut ajouter ainsi plusieurs utilisateurs, le résultat de ces ajouts se trouve dans l'onglet `Domains and Accounts` comme ci- dessous :
+On peut ajouter ainsi plusieurs utilisateurs, le résultat de ces ajouts se trouve dans l'onglet `Domains and Accounts` puis `billu.com` puis `Users`. La liste des utilisateurs enregistrés s'affiche comme ci- dessous :
 
 <P ALIGN="center"><IMG src="..\Ressources\Annexes S07\Capture_iRedAdmin_3.png" width=600></P>
 
