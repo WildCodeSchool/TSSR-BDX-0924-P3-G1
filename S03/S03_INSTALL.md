@@ -15,6 +15,7 @@
   - ### 2.1 - Ajout d'une machine Windows 10
     
 ### 3 - Création d'un serveur GLPI sur une VM Debian 12 (CLI)
+  - ### 3.1 - Configuration du serveur GLPI (Via l'interface graphique)
 
 <HR>
 
@@ -236,10 +237,28 @@ session.use_trans_sid = 0
 
 et a la fin en Redémarrer Debian Server.
 
+### 3.1 - Configuration du serveur GLPI (Via l'interface graphique)
 
+Dans un premier temps, nous devons nous rendre sur un hôte disposant d'une interface graphique, et connecté sur le même réseau que celui qui heberge le serveur GLPI.
+Dans notre cas, ce sera une VM WIndows 10 Pro , Ouvrir ensuite un navigateur et inscrire l'adresse suivante : <Adresse_IP_Serveur_GLPI>/glpi.lab.lan > Nous saisissons nos identifiants et notre mot de passe, et nous arrivons dons sur la page ci-dessous :
 
+<P ALIGN="center"><IMG src="..\Ressources\Annexes S03\CP.interfaceGLPI.png" width=500></P>
 
+1. Nous nous assurons de modifier le mot de passe et d'effacer le fichier. install/install.php ,Comme le mentionne la notification en orange.
 
+2. Nous allons désormais ajouter notre serveur de contrôle de domaine et Active Directory **THOR** 
+   Pour commencer, on se connecte à GLPI avec nos identifiants, puis dirigez-vous vers le menu. "Configuration", cliquez sur "Authentification".
+
+<P ALIGN="center"><IMG src="..\Ressources\Annexes S03\CP.GLPI-AnnuaireLDAP.png" width=500></P>
+
+3. On clique sur "Ajouter" et renseignons les informations concernant notre serveur contrôleur de domaine, en s'assurant d'indiquer la bonne adresse IP et le 
+   BaseDN.
+
+<P ALIGN="center"><IMG src="..\Ressources\Annexes S03\cp.GLPI- Annuaire LDPA-THOR.Billu.com.png" width=500></P>
+
+4. Pour terminer, cliquez sur Sauvegarder puis effectuez un test pour vérifier que tout fonctionne correctement. Pour cela, cliquez sur Tester en haut à gauche du 
+   menu LDAP. Normalement, un message indiquant la réussite du test devrait apparaître.
+<P ALIGN="center"><IMG src="..\Ressources\Annexes S03\CP .test Glpi.png" width=500></P>
 
 
 
