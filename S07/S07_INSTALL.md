@@ -36,16 +36,38 @@ sudo bash iRedMail.sh
 ````
 Pour rentrer dans l'installation, sélectionner `YES`
 
-<P ALIGN="center"><IMG src="..\Ressources\Annexes S03\GPO_Powershell_config1.png" width=500></P>
+<P ALIGN="center"><IMG src="..\Ressources\Annexes S07\Capture_Messagerie_1.png" width=600></P>
 
 Points importants lors de l’installation :
 
 - Emplacement de stockage des boîtes aux lettres : Par défaut `/var/vmail/`.
+- Préférence de serveur Web : Sélectionner `Nginx`
+
+<P ALIGN="center"><IMG src="..\Ressources\Annexes S07\Capture_Messagerie_2.png" width=600></P>
+
 - Backend pour les comptes de messagerie : Choisir `MariaDB`
+
+<P ALIGN="center"><IMG src="..\Ressources\Annexes S07\Capture_Messagerie_4.png" width=600></P>
+
 - Mot de passe pour l'accès à la base de données : `Azerty1*`
 - Nom de domaine : Entrer `billu.com`.
+
+<P ALIGN="center"><IMG src="..\Ressources\Annexes S07\Capture_Messagerie_3.png" width=600></P>
+  
 - Mot de passe administrateur : Définir le mot de passe pour l’administrateur du domaine `Azerty1*`.
-- Webmail : Sélectionner les options par défaut.
+- Webmail : Sélectionner les options par défaut, `Roudcubemail`, `netdata`, `iRedAdmin`, `Fail2ban`.
+- Récapitulatif des options de configuration :
+
+<P ALIGN="center"><IMG src="..\Ressources\Annexes S07\Capture_Messagerie_5.png" width=600></P>
+
+- Répondre `YES` aux deux dernières questions posées :
+
+<P ALIGN="center"><IMG src="..\Ressources\Annexes S07\Capture_Messagerie_6.png" width=600></P>
+
+- une message vous informe que l'installation s'est éffectuée ave succès, redémarrer la machine
+
+<P ALIGN="center"><IMG src="..\Ressources\Annexes S07\Capture_Messagerie_7.png" width=600></P>
+  
 
 ## Enregistrements DNS sur le serveur Windows Graphique, Thor
 
@@ -57,16 +79,32 @@ Points importants lors de l’installation :
 5. Priorité : Garder la valeur par défaut, `10`.
 6. Cliquez sur "OK" pour enregistrer.
 
+<P ALIGN="center"><IMG src="..\Ressources\Annexes S07\Capture_RecordsDNS_1.png" width=500></P>
+
+**A**
+1. Ouvrir le gestionnaire DNS dans *Tools*
+2. Sélectionner *Thor* puis *Forward Lookup Zone* puis clic-droit sur *billu.com* ===> cliquer sur `New Host (A or AAAA)...`
+3. Donner le nom `mail`
+4. Donner l'ip `172.18.255.5`.
+5. Cliquez sur "OK" pour enregistrer.
+
 **CNAME**
 1. Clic-droit sur *billu.com* ===> cliquer sur `New Alias (CNAME)...`
 2. Donner le nom de l'alias `iredmail`
 3. Donner le nom de domaine complet de la cible `mail.billu.com`
 4. Cliquez sur "OK" pour enregistrer.
 
+<P ALIGN="center"><IMG src="..\Ressources\Annexes S07\Capture_RecordsDNS_2.png" width=500></P>
+
 Vérifier dans la fenêtre de droite du DNS Manager que les enregistrements ont bien été éffectués. Celà devrait apparaitre comme ci-dessous : 
 
-<P ALIGN="center"><IMG src="..\Ressources\Annexes S03\GPO_Powershell_config1.png" width=500></P>
-<P ALIGN="center"><IMG src="..\Ressources\Annexes S03\GPO_Powershell_config1.png" width=500></P>
+<P ALIGN="center"><IMG src="..\Ressources\Annexes S07\Capture_RecordsDNS_3.png" width=600></P>
+
+<P ALIGN="center"><IMG src="..\Ressources\Annexes S07\Capture_RecordsDNS_4.png" width=600></P>
+
+Le serveur de messagerie est fonctionnel. La documentation concernant l'utilisation de `Roundcube` et `iRedMail` se situe dans le fichier `S07_USER_GUIDE.md`.
+
+
 
 
 
