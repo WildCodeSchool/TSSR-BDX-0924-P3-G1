@@ -19,7 +19,6 @@
 ### les différentes VM seront installées sur ProxMox
 
 ### Pour l'installation de la VM Debian12 :
-
 - Cliquez sur "Create VM" dans le menu supérieur
 
   - Donnez un nom à votre VM (VM-SRV-01)
@@ -31,33 +30,38 @@
   - disque
   - cliquez sur "OK" pour la validation
 
-### Configuration
+    ### Configuration
 
-- Cliquez sur "Graphical install"
-- ![graphique](https://github.com/user-attachments/assets/2d684241-d7c1-4e5b-a1a0-25fb145e0be6)
-- On choisie la langue pour faire l'installation
-- ![3 langue-install 3](https://github.com/user-attachments/assets/cd51ef36-1a80-4066-a4f3-c1d0846a42c2)
+- Cliquez sur "install "  
+ <P ALIGN="center"><IMG src="../Ressources/Annexes S02/capture_debian_lci.png" width=500></P> 
+
+ - On choisie la langue pour faire l'installation
+ <P ALIGN="center"><IMG src="../Ressources/Annexes S02/langue de conf.png" width=500></P> 
 - On établit le nom d'hôte
-- ![5-hostname](https://github.com/user-attachments/assets/54825be5-8ffb-4080-83e9-36470236d3cf)
+ <P ALIGN="center"><IMG src="../Ressources/Annexes S02/le nom d'hôte.png" width=500></P> 
 - On désigne également un nom de domaine.
-- ![6 nom de domain](https://github.com/user-attachments/assets/5bb4e695-867a-4dcf-a61c-7327ed328b0c)
+ <P ALIGN="center"><IMG src="../Ressources/Annexes S02/nom de domaine..png" width=500></P>  
 - On définie un mot de passe
-- ![7 PassWORD](https://github.com/user-attachments/assets/b0a2a6c1-776b-425c-9b60-9f00e0f04996)
+ <P ALIGN="center"><IMG src="../Ressources/Annexes S02/mot de passe .png" width=500></P> 
 - On définie le nom de l'utilisateur
-- ![8 username](https://github.com/user-attachments/assets/5e2a02c5-654e-452b-83a9-f2e6f43093e5)
+ <P ALIGN="center"><IMG src="../Ressources/Annexes S02/user.png" width=500></P> 
 - puis on rajoute un mot de pass
-- ![7 PassWORD](https://github.com/user-attachments/assets/b0a2a6c1-776b-425c-9b60-9f00e0f04996)
+ <P ALIGN="center"><IMG src="../Ressources/Annexes S02/mot de passe .png" width=500></P> 
 
 - On partitionne notre disque selon nous besoin.
-- ![10 partition-d](https://github.com/user-attachments/assets/7b222862-4aef-47f9-b37a-4a8969efc266)
+ <P ALIGN="center"><IMG src="../Ressources/Annexes S02/disque .png" width=500></P> 
 
 - Nous continuons à valider jusqu'à ce qu'il nous demande de configurer la gestion de packages, et à ce moment-là, nous l'acceptons et choisissons cette option.
-  deb.debian.org -![deb debian org](https://github.com/user-attachments/assets/660b7ff2-1195-49cf-9005-336d87ccbc1e)
+  deb.debian.org
+ <P ALIGN="center"><IMG src="../Ressources/Annexes S02/deb.debian.org.png" width=500></P>
   -Nous continuons la validation jusqu'à ce qu'il nous demande de paramétrer l'environnement de bureau de notre machine, et nous faisons notre choix selon nos
   besoins.
-- ![ssh](https://github.com/user-attachments/assets/f06ff4e7-7cea-410a-8d33-867d7babcf09)
-  -Nous continuons la validation avec l'installation du programme GRUB -![installation de grub](https://github.com/user-attachments/assets/987204ca-c70d-4332-8af4-90e4c383c036)
-  -Et normalement, on a juste à attendre la fin de l'installation pour ensuite accéder à notre machine Debian. -![fin d'instalation ](https://github.com/user-attachments/assets/0deb1713-edf1-4be1-a6d2-14792086e4ed) -![a](https://github.com/user-attachments/assets/61723781-e4db-4e31-8def-8e129ca36552)
+ <P ALIGN="center"><IMG src="../Ressources/Annexes S02/server web et ssh.png" width=500></P>
+-Nous continuons la validation avec l'installation du programme GRUB 
+<P ALIGN="center"><IMG src="../Ressources/Annexes S02/grub.png" width=500></P>
+-Et normalement, on a juste à attendre la fin de l'installation pour ensuite accéder à notre machine Debian. 
+<P ALIGN="center"><IMG src="../Ressources/Annexes S02/fin d'installation.png" width=500></P>
+<P ALIGN="center"><IMG src="../Ressources/Annexes S02/console-debian.png" width=500></P>
 
 </details>
 <HR>
