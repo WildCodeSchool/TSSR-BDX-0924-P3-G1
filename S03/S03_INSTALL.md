@@ -260,12 +260,21 @@ Dans notre cas, ce sera une VM WIndows 10 Pro , Ouvrir ensuite un navigateur et 
    menu LDAP. Normalement, un message indiquant la réussite du test devrait apparaître.
 <P ALIGN="center"><IMG src="..\Ressources\Annexes S03\CP .test Glpi.png" width=500></P>
 
+5. Pour s'assurer que les comptes utilisateurs fonctionnent, nous allons nous connecter avec un compte et créer un ticket
+    
+* On veille à bien inscrire le nom de l'utilisateur@domaine 
+
+<P ALIGN="center"><IMG src="..\Ressources/Annexes S03/billu test.png" width=500></P>
 
 
+* Une fois dans le compte, on clique sur créer un ticket, on remplit et formule notre demande, puis on valide. Normalement, on est censé voir une notification en bas à droite
+<P ALIGN="center"><IMG src="..\Ressources/Annexes S03/wizzard de ticket glpi.png" width=500></P>
 
+<P ALIGN="center"><IMG src="..\Ressources\Annexes S03\création du ticket teste pour glpi .png" width=500></P>
 
+* Et pour vérifier, on se connecte comme super administrateur et on voit la demande d'assistance en jaune.
 
-
+<P ALIGN="center"><IMG src="..\Ressources\Annexes S03\premier ticket .png" width=500></P>
 
 
 
