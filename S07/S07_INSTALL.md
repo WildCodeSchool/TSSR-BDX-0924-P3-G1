@@ -198,11 +198,11 @@ Suivez l'assistant d'installation initiale pour configurer les paramètres requi
 
 Connectez-vous ensuite avec les identifiants par défaut (Admin/zabbix) pour accéder au tableau de bord initial.
 
-Après avoir sélectionné la langue par défaut, cliquez sur Étape suivante pour accéder à la page de vérification des prérequis minimaux.
+Après avoir sélectionné la langue par défaut, cliquez sur Étape suivante pour accéder à la page de vérification des prérequis minimaux.  
 
-![Cature_SC_Conf_Zabbix_01](./Ressources/Annexes_S07/SC_Conf_Zabbix_01.png)
-![Cature_SC_Conf_Zabbix_02](./Ressources/Annexes_S07/SC_Conf_Zabbix_02.png)
-![Cature_SC_Conf_Zabbix_03](./Ressources/Annexes_S07/SC_Conf_Zabbix_03.png)
-![Cature_SC_Conf_Zabbix_04](./Ressources/Annexes_S07/SC_Conf_Zabbix_04.png)
-![Cature_SC_Conf_Zabbix_05](./Ressources/Annexes_S07/SC_Conf_Zabbix_05.png)
+![Cature_SC_Conf_Zabbix_01](../Ressources/Annexes_S07/SC_Conf_Zabbix_01.png)  
+![Cature_SC_Conf_Zabbix_02](../Ressources/Annexes_S07/SC_Conf_Zabbix_02.png)  
+![Cature_SC_Conf_Zabbix_03](../Ressources/Annexes_S07/SC_Conf_Zabbix_03.png)  
+![Cature_SC_Conf_Zabbix_04](../Ressources/Annexes_S07/SC_Conf_Zabbix_04.png)  
+![Cature_SC_Conf_Zabbix_05](../Ressources/Annexes_S07/SC_Conf_Zabbix_05.png)  
 
