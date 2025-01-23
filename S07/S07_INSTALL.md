@@ -196,13 +196,31 @@ Depuis un poste administrateur, accédez à l'URL où Zabbix est en cours d'exé
 
 Suivez l'assistant d'installation initiale pour configurer les paramètres requis, tels que la connexion à la base de données et les informations de base sur le serveur.
 
-Connectez-vous ensuite avec les identifiants par défaut (Admin/zabbix) pour accéder au tableau de bord initial.
+Utilisez le menu déroulant Langue par défaut pour modifier la langue par défaut du système et poursuivre le processus d'installation dans la langue sélectionnée.
 
-Après avoir sélectionné la langue par défaut, cliquez sur Étape suivante pour accéder à la page de vérification des prérequis minimaux.  
+_Notez que définir la langue sur l'anglais (en_US) activera également le format heure/date américain dans l'interface._
 
 ![Cature_SC_Conf_Zabbix_01](../Ressources/Annexes_S07/SC_Conf_Zabbix_01.png)  
+
+#### Vérification des pré-requis
+Assurez-vous que tous les prérequis obligatoires de l'interface Zabbix sont remplis.
 ![Cature_SC_Conf_Zabbix_02](../Ressources/Annexes_S07/SC_Conf_Zabbix_02.png)  
+
+#### Configurer la connexion à la base de données
+Entrez les détails de connexion à la base de données.
 ![Cature_SC_Conf_Zabbix_03](../Ressources/Annexes_S07/SC_Conf_Zabbix_03.png)  
-![Cature_SC_Conf_Zabbix_04](../Ressources/Annexes_S07/SC_Conf_Zabbix_04.png)  
+
+#### Paramètres
+La saisie d'un nom pour le serveur Zabbix est facultative, cependant, si elle est soumise, elle sera affichée dans la barre de menu et dans les titres des pages.
+
+Définissez le fuseau horaire et le thème par défaut pour le frontend.
+![Cature_SC_Conf_Zabbix_04](../Ressources/Annexes_S07/SC_Conf_Zabbix_04.png)
+
+#### Résumé de pré-installation
+Consultez un résumé des paramètres.
 ![Cature_SC_Conf_Zabbix_05](../Ressources/Annexes_S07/SC_Conf_Zabbix_05.png)  
 
+
+#### Se connecter
+L'interface Zabbix est prête ! Le nom d'utilisateur par défaut est **Admin**, mot de passe **zabbix**.
+![Cature_SC_Conf_Zabbix_06](../Ressources/Annexes_S07/SC_Conf_Zabbix_06.png) 
