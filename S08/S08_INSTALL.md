@@ -27,19 +27,23 @@
 2. Cliquez sur **Gérer** puis **Ajouter des rôles et fonctionnalités**.
 3. Suivez l'assistant jusqu'à l'étape **Sélection des rôles de serveur**.
 4. Sélectionnez **Windows Server Update Services** **WSUS**
-5. Ajoutez les fonctionnalités nécessaires 
-6. Suivez les instructions pour terminer l'installation
+ <P ALIGN="center"><IMG src="..\Ressources/Annexes_S08/Annexes_08/Capture d'ecran Serveur WSUS_2.png" width=500></P>
+ 
+ 5. Ajoutez les fonctionnalités nécessaires et  Suivez les instructions pour terminer l'installation
+ 
+ <P ALIGN="center"><IMG src="..\Ressources/Annexes_S08/Annexes_08/Capture d'ecran Serveur WSUS_1.png" width=500></P>
 
 ## Étape 3 Configuration du serveur WSUS 
 
 1. Une fois que vous êtes sur l'interface de WSUS, sélectionnez la langue souhaitée, puis cliquez sur "Suivant".
 2. On clique sur start connecting
 3. On poursuit avec le choix de langue pour faire les mises à jour
-4. Sélectionnez les produits pour lesquels il est nécessaire de récupérer les mises à jour.
-5. nous sélectionnons le type de mise à jour que nous souhaitons opter pour.
-6. on choisi qu'elle frequance  selon le besoin et on clique sur finish pour terminer l'installation et tous se passe bien on doit arriver sur la console de serveur WSUS 
+   <P ALIGN="center"><IMG src="..\Ressources/Annexes_S08/Annexes_08/Capture d'ecran Serveur WSUS_4.png" width=500></P>
+5. Sélectionnez les produits pour lesquels il est nécessaire de récupérer les mises à jour.
+6. nous sélectionnons le type de mise à jour que nous souhaitons opter pour.
+7. on choisi qu'elle frequance  selon le besoin et on clique sur finish pour terminer l'installation et tous se passe bien on doit arriver sur la console de serveur WSUS 
 
-
+<P ALIGN="center"><IMG src="..\Ressources/Annexes_S08/Annexes_08/Capture d'écran Serveur WSUS_8.png" width=500></P>
 
 
 
