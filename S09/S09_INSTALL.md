@@ -155,13 +155,15 @@ yum update
 
 * Se rendre dans le menu ApplicationspuisExtensions
 <P ALIGN="center"><IMG src="..\Ressources/Annexes_S09/SC_freepbx_compte_users.png" width=500></P>
+<P ALIGN="center"><IMG src="..\Ressources/Annexes_S09/SC_freePBX_compte_Users_02.png" width=500></P>
 
-<P ALIGN="center"><IMG src="..\Ressources/Annexes_S09/SC_freepbx_compte_users.png" width=500></P>
-  
+ 
 
 * Aller sur l'onglet SIP [chan_pjsip] Extensionspuis choisir des utilisateurs de l'AD ( Malki Hamza et Anthony Vidal  pour l'exemple)
 
-<P ALIGN="center"><IMG src="..\Ressources/Annexes_S09/SC_freePBX_compte_Users_02.png" width=500></P>
+
+<P ALIGN="center"><IMG src="..\Ressources/Annexes_S09/SC_freepbx_telephonie .png" width=500></P>
+
 
 
 
