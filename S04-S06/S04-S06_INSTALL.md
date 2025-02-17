@@ -6,16 +6,6 @@
 
 ## Installation Serveur Debian12
 
-## Configuration Réseau
-
-| **Réseau 172.18.0.0/24** | \*\*\*\* | \*\*\*\* | \*\*\*\* |
-| ------------------------ | -------- | -------- | -------- |
-| **172.18.**              |          |          |          |
-| \*\*\*\*                 |          |          |          |
-| \*\*\*\*                 |          |          |          |
-
-<details>
-
 ### les différentes VM seront installées sur ProxMox
 
 ### Pour l'installation de la VM Debian12 :
@@ -63,12 +53,9 @@
 <P ALIGN="center"><IMG src="../Ressources/Annexes S02/fin d'installation.png" width=500></P>
 <P ALIGN="center"><IMG src="../Ressources/Annexes S02/console-debian.png" width=500></P>
 
-</details>
 <HR>
 
 - ## Configuration SSH sur Debian
-
-<details>
 
 1.  Ouvrir le terminal et tapez la commande :
 
@@ -128,8 +115,6 @@ pui Utilisez la commande suivante pour vous connecter à votre serveur Debian
 
 Remplacez user par votre nom d'utilisateur Debian et server_ip par l'adresse IP de votre serveur Debian , puis vous Saisissez le mot de passe de votre
 utilisateur Debian lorsque vous y êtes invité.
-
-</details>
 
 ##
 
