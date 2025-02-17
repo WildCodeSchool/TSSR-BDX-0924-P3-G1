@@ -1,7 +1,14 @@
 # TSSR-2409-P3-G1-BuildYourInfra-BillU
 
-### **Installation**
+### FreePBX - Installation d'un serveur VOIP
 
+### Apache2 - Installation d'un serveur Web
+
+
+
+
+
+## 1. FreePBX
 ✔️ **Pré-requis: 1 Go de RAM et 20 Go de disque dur**
 
 L'ISO peut se récupérer à cette adresse : https://www.freepbx.org/downloads/
@@ -148,11 +155,13 @@ yum update
 
 * Se rendre dans le menu ApplicationspuisExtensions
 <P ALIGN="center"><IMG src="..\Ressources/Annexes_S09/SC_freepbx_compte_users.png" width=500></P>
+
+<P ALIGN="center"><IMG src="..\Ressources/Annexes_S09/SC_freepbx_compte_users.png" width=500></P>
   
 
 * Aller sur l'onglet SIP [chan_pjsip] Extensionspuis choisir des utilisateurs de l'AD ( Malki Hamza et Anthony Vidal  pour l'exemple)
 
-<P ALIGN="center"><IMG src="..\Ressources/Annexes_S09/SC_freepbx_telephonie .png" width=500></P>
+<P ALIGN="center"><IMG src="..\Ressources/Annexes_S09/SC_freePBX_compte_Users_02.png" width=500></P>
 
 
 
