@@ -44,3 +44,22 @@ Puis changer la configuration IP en éxécutant :
 nano /etc/sysconfig/network-scripts/ifcfg-eth0
 ```
 <P ALIGN="center"><IMG src="..\Ressources/Annexes_S09/SC.freePBX_Installation_6.png" width=500></P>
+
+
+**Connexion WEB**
+A partir d'un navigateur web, se connecter sur l'adresse du serveur afin d'arriver sur l'interface de gestion de FreePBX. Ici, le DNS a été pointé pour pouvoir y en indiquant l'URLhttp://freepbx
+
+<P ALIGN="center"><IMG src="..\Ressources/Annexes_S09/SC.freePBX_graphique_2.png" width=500></P>
+
+
+
+
+
+
+
+
+
+
+
+
+
