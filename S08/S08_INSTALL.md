@@ -220,6 +220,116 @@ Vous avez maintenant configuré un serveur web Apache2 fonctionnel dans une DMZ 
 
 
 
+# Installation et Configuration d'un VPN Site-à-Site avec pfSense et IPsec
+
+Ce guide décrit la configuration d'un VPN IPsec site-à-site entre deux réseaux locaux à travers pfSense.
+
+## 1 - Objectif
+L'objectif est d'établir un tunnel VPN sécurisé entre :
+- **Société Billu.com** (LAN : `172.18.0.0/16`, WAN : `10.0.0.2/29`)
+- **Société EchoTech-Solutions.lan** (LAN : `10.10.0.0/16`, WAN : `10.0.0.3/29`)
+
+Une fois configuré, les machines des deux réseaux doivent pouvoir communiquer via ping et autres protocoles.
+
+---
+
+## 2 - Configuration de pfSense (Site Billu.com)
+
+### Étape 1 : Accéder à l'interface Web
+Se connecter à l'interface de gestion de pfSense via :
+```
+https://10.0.0.2
+```
+
+### Étape 2 : Créer une phase 1 IPsec
+1. Allez dans **VPN -> IPsec** et cliquez sur **Ajouter P1**
+2. Configurez les paramètres :
+   - **Interface** : WAN
+   - **Remote Gateway** : `10.0.0.3`
+   - **Authentication Method** : Pre-Shared Key (PSK)
+   - **Pre-Shared Key** : Choisissez une clé sécurisée
+   - **IKE Version** : IKEv2
+   - **Encryption Algorithm** : AES-256-GCM
+   - **DH Group** : 14 (2048 bits)
+
+### Étape 3 : Ajouter une Phase 2
+1. Cliquez sur **Ajouter P2** sous la phase 1 précédemment créée
+2. Configurez les paramètres :
+   - **Local Network** : `172.18.0.0/16`
+   - **Remote Network** : `10.10.0.0/16`
+   - **Protocol** : ESP
+   - **Encryption Algorithm** : AES-256
+   - **Integrity Algorithm** : SHA-256
+   - **PFS Key Group** : 14
+
+### Étape 4 : Ajouter une règle de pare-feu
+1. Allez dans **Firewall -> Rules -> IPsec**
+2. Ajoutez une règle permettant le trafic entre les deux réseaux :
+   - **Source** : `172.18.0.0/16`
+   - **Destination** : `10.10.0.0/16`
+   - **Action** : Pass
+
+---
+
+## 3 - Configuration de pfSense (Site EchoTech-Solutions.lan)
+
+### Étape 1 : Accéder à l'interface Web
+Se connecter à l'interface de gestion de pfSense via :
+```
+https://10.0.0.3
+```
+
+### Étape 2 : Créer une phase 1 IPsec
+1. Allez dans **VPN -> IPsec** et cliquez sur **Ajouter P1**
+2. Configurez les paramètres en miroir :
+   - **Interface** : WAN
+   - **Remote Gateway** : `10.0.0.2`
+   - **Authentication Method** : Pre-Shared Key (PSK)
+   - **Pre-Shared Key** : Même clé que Billu.com
+   - **IKE Version** : IKEv2
+   - **Encryption Algorithm** : AES-256-GCM
+   - **DH Group** : 14
+
+### Étape 3 : Ajouter une Phase 2
+1. Cliquez sur **Ajouter P2** sous la phase 1 précédemment créée
+2. Configurez les paramètres :
+   - **Local Network** : `10.10.0.0/16`
+   - **Remote Network** : `172.18.0.0/16`
+   - **Protocol** : ESP
+   - **Encryption Algorithm** : AES-256
+   - **Integrity Algorithm** : SHA-256
+   - **PFS Key Group** : 14
+
+### Étape 4 : Ajouter une règle de pare-feu
+1. Allez dans **Firewall -> Rules -> IPsec**
+2. Ajoutez une règle permettant le trafic entre les deux réseaux :
+   - **Source** : `10.10.0.0/16`
+   - **Destination** : `172.18.0.0/16`
+   - **Action** : Pass
+
+---
+
+## 4 - Vérification et Tests
+
+### Étape 1 : Vérifier l'état du VPN
+1. Allez dans **Status -> IPsec**
+2. Vérifiez que la connexion est **établie**
+
+### Étape 2 : Tester la connectivité
+Depuis un poste du réseau Billu.com :
+```bash
+ping 10.10.0.1
+```
+Depuis un poste du réseau EchoTech-Solutions.lan :
+```bash
+ping 172.18.0.1
+```
+Si les pings fonctionnent, le VPN est bien opérationnel.
+
+---
+
+## Conclusion
+Ce guide a permis d'établir un tunnel VPN sécurisé entre Billu.com et EchoTech-Solutions.lan via pfSense et IPsec. Cette connexion assure une communication fluide et sécurisée entre les deux LANs.
 
 
 
