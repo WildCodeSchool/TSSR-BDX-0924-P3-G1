@@ -1,37 +1,19 @@
 ## Tableau de synthèse des éléments du schéma
 
-1. ID du matériel
-2. Nom du matériel dans la GUI Proxmox
-3. Nom du matériel dans la machine
-4. Type d'objet Proxmox (VM ou CT)
-5. OS
-6. Fonction principal
-7. N° de carte réseau (vmbr)
-8. Adresse IP, CIDR
-9. Nombre de disques, et par disque :
-   1. Taille totale (en Go)
-   2. Espace libre (en Go)
-   3. Espace libre (en %)
-10. RAM :
-    1. Taille totale (En Go)
-    2. Taille utilisée, en moyenne (en %)
 
-Format :
+| **ID** | **Nom dans Proxmox** | **Nom dans la machine** | **Type d'objet Proxmox** | **OS**                  | **Fonction Principale** | **N° de carte réseau**  | **Adresse IP, CIDR**                            | **Nombre de disques** | **Taille Totale (Go)** | **Espace libre (Go / %)** | **RAM Totale** | **RAM utilisée (Go / %)** |
+| ------ | -------------------- | ----------------------- | ------------------------ | ----------------------- | ----------------------- | ----------------------- | ----------------------------------------------- | --------------------- | ---------------------- | ------------------------- | -------------- | ------------------------- |
+| 1040   | G1-pfsense-P3        | pfSense.home.arpa       | VM                       | pfsense                 | Pare-feu                | vmbr1 vmbr1025 vmbr1040 | 10.0.0.2/29 172.18.255.254/16 172.20.255.254/16 | 1                     | 10Go                   | N/A                       | 2Go            | 1Go / 50,78%              |
+| 1041   | G1-SRV-DC-01         | Thor                    | VM                       | Windows Server GUI 2022 | ADDS/DHCP/DNS           | vmbr1025                | 172.18.255.1/16                                 | 3                     | 132Go                  | 116Go / 87,87%            | 4Go            | 2,34Go / 59,05%           |
+| 1042   | G1-SRV-DC-02         | IronMan                 | VM                       | Windows Server Core     | ADDS Réplication        | vmbr1025                | 172.18.255.2/16                                 | 1                     | 32Go                   | 19,50Go / 61%             | 2Go            | 843,48Mo / 42,05%         |
+| 1043   | G1-SRV-SUP-01        | SpiderMan               | VM                       | Debian 12.8             | Supervision Zabbix      | vmbr1025                | 172.18.255.4/16                                 | 1                     | 32Go                   | 26Go / 86%                | 4Go            | 1,95Go / 47,53%           |
+| 1044   | G1-PC-DEV-01         | PC-DEV-01               | VM                       | Windows 10              | Machine cliente         | vmbr1025                | 172.18.10.7/16                                  | 1                     | 50Go                   | 35,60Go / 71,2%           | 4Go            | 3,24Go / 80,86%           |
+| 1046   | G1-SRV-MAIL-01       | Hulk                    | VM                       | Debian 12.8             | Serveur Mail            | vmbr1025                | 172.18.255.5/16                                 | 1                     | 32Go                   | 25,60Go / 80%             | 2Go            | 629,39Mo / 88,32%         |
+| 1048   | G1-SRV-GLPI-01       | DeadPool                | VM                       | Debian 12.8             | GLPI                    | vmbr1025                | 172.18.255.3/16                                 | 1                     | 32Go                   | 25,1Go / 82,6%            | 2Go            | 873,52Mo / 41,93%         |
+| 1049   | G1-SRV-WEB-01        | Wolverine               | VM                       | Debian 12.8             | Serveur Web             | vmbr1040                | 172.18.255.9/16                                 | 1                     | 32Go                   | 27,06Go / 89,04%          | 2Go            | 329,21Mo / 8,38%          |
+| 1052   | G1-SRV-WSUS-01       | Thanos                  | VM                       | Windows Server GUI 2022 | Mises à jour-WSUS       | vmbr1025                | 172.18.255.7/16                                 | 2                     | 82Go                   | 58,60Go / 71,46%          | 4Go            | 2,11Go / 52,60%           |
+| 1053   | G1-SRV-PBX-01        | Flash                   | VM                       | Debian 12.8             | Téléphonie-FreePBX      | vmbr1025                | 172.18.10.0/16                                  | 1                     | 32Go                   | 22,28Go / 69,6%           | 2Go            | 306,36Mo / 81,40%         |
+| 1054   | G1-PC-FIN-01         | PC-FIN-01               | VM                       | Windows 10              | Machine cliente         | vmbr1025                | 172.18.10.1/16                                  | 1                     | 50Go                   | 20Go / 40%                | 4Go            | 3,24Go / 81,03%           |
+| 1055   | G1-PC-DIR-01         | PC-DIR-01               | VM                       | Windows 10              | Machine cliente         | vmbr1025                | 172.18.10.2/16                                  | 1                     | 50Go                   | 20Go / 40%                | 4Go            | 3,24Go / 81,03%           |
+| 1059   | G1-PC-DSI-A1         | PC-DSI-A1               | VM                       | Windows 10              | PC d'administration     | vmbr1025                | 172.18.10.6/16                                  | 1                     | 50Go                   | 12,4Go / 24,8%            | 16Go           | 14,66Go / 91,61%          |
 
-- Tableau markdown dans Github
-- Fichier **Synthese_Materiel.md** dans le dossier de la dernière semaine de projet 3.
-
-| ID                        | 1041                    | 1042                | 1043               | 1044            | 1046            | 1048            | 1049            | 1052                    | 1053               | 1054            | 1055            | 1059                |
-| ------------------------- | ----------------------- | ------------------- | ------------------ | --------------- | --------------- | --------------- | --------------- | ----------------------- | ------------------ | --------------- | --------------- | ------------------- |
-| **Nom dans Proxmox**      | G1-SRV-DC-01            | G1-SRV-DC-02        | G1-SRV-SUP-01      | G1-PC-DEV-01    | G1-SRV-MAIL-01  | G1-SRV-GLPI-01  | G1-SRV-WEB-01   | G1-SRV-WSUS-01          | G1-SRV-PBX-01      | G1-PC-FIN-01    | PC-DIR-01       | G1-PC-DSI-A1        |
-| **Nom dans la machine**   | Thor                    | IronMan             | SpiderMan          | PC-DEV-01       | Hulk            | DeadPool        | Wolverine       | Thanos                  | Flash              | PC-FIN-01       | PC-DIR-01       | PC-DSI-A1           |
-| **Type d'objet Proxmox**  | VM                      | VM                  | VM                 | VM              | VM              | VM              | VM              | VM                      | VM                 | VM              | VM              | VM                  |
-| **OS**                    | Windows Server GUI 2022 | Windows Server Core | Debian 12.8        | Windows 10      | Debian 12.8     | Debian 12.8     | Debian 12.8     | Windows Server GUI 2022 | Debian 12.8        | Windows 10      | Windows 10      | Windows 10          |
-| **Fonction Principale**   | ADDS/DHCP/DNS           | ADDS Réplication    | Supervision Zabbix | Machine cliente | Serveur Mail    | GLPI            | Serveur Web     | Mises à jour-WSUS       | Téléphonie-FreePBX | Machine cliente | Machine cliente | PC d'administration |
-| **N° de carte réseau**    | vmbr1025                | vmbr1025            | vmbr1025           | vmbr1025        | vmbr1025        | vmbr1025        | vmbr1040        | vmbr1025                | vmbr1025           | vmbr1025        | vmbr1025        | vmbr1025            |
-| **Adresse IP, CIDR**      | 172.18.255.1/16         | 172.18.255.2/16     | 172.18.255.4/16    | 172.18.10.7/16  | 172.18.255.5/16 | 172.18.255.3/16 | 172.18.255.9/16 | 172.18.255.7/16         | 172.18.10.0/16     | 172.18.10.1/16  | 172.18.10.2/16  | 172.18.10.6/16      |
-| **Nombre de disques**     | 3                       | 1                   | 1                  | 1               | 1               | 1               | 1               | 2                       | 1                  | 1               | 1               | 1                   |
-| **Taille Totale (Go)**    | 132                     | 32                  | 32                 | 50              | 32              | 32              | 32              | 82                      | 32                 | 50              | 50              | 50                  |
-| **Espace libre (Go / %)** |                         |                     |                    |                 |                 |                 |                 |                         |                    |                 |                 |                     |
-| **RAM Totale**            | 4Go                     | 2Go                 | 4Go                | 4Go             | 2Go             | 2Go             | 2Go             | 4Go                     | 2Go                | 4Go             | 4Go             | 4Go                 |
-| **RAM (Go et %)**         | 4Go 59,05%              | 2Go 42,05%          | 4Go 47,53%         | 4Go 80,86%      | 2Go 88,32%      | 2Go 41,93%      | 2Go 8,38%       | 4Go 52,60%              | 2Go 81,40%         | 4Go             | 4Go             | 4Go 87,61%          |
