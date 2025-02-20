@@ -6,7 +6,9 @@ Pour la réalisation de notre projet, il nous a été demandé de réaliser un a
 Pour l'installation, il faut se rendre sur le site.https://www.pingcastle.com/
 
 Cliquer sur FreeDownload
-<P ALIGN="center"><IMG src="..\Ressources/Annexes_s010/pingCastle/SC_pingcastle_Download.png" width=500></P> 
+
+![Cature_SC_pingcastle_Download](../Ressources/Annexes_s10/pingCastle/SC_pingcastle_Download.png)  
+
 
 Un fois le fichier télécharger, le décompresser et lancer le fichier :
 
