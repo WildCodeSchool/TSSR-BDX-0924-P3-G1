@@ -7,7 +7,7 @@ Pour l'installation, il faut se rendre sur le site.https://www.pingcastle.com/
 
 Cliquer sur FreeDownload
 
-![Cature_SC_pingcastle_Download](../Ressources/Annexes_s10/pingCastle/SC_pingcastle_Download.png)  
+![Cature_SC_pingcastle_Download](../Ressources/Annexes_S10/pingCastle/SC_pingcastle_Download.png)  
 
 
 Un fois le fichier télécharger, le décompresser et lancer le fichier :
